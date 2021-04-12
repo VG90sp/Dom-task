@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 document.addEventListener('DOMContentLoaded', () => {
   const cells = document.querySelectorAll('td');
   const cellsArr = [...cells];
@@ -5,7 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const activeCell = () => Math.floor(Math.random() * cellsArr.length);
   let startCell = activeCell();
   cellsArr[startCell].innerHTML = icon;
-
   setInterval(() => {
     let currentCell = activeCell();
     if (startCell === currentCell) currentCell = activeCell();
